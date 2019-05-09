@@ -1,0 +1,55 @@
+# Basic
+title: ArcherSyzyygy
+subtitle: Hello world!
+description: 山山而川
+
+# 头像里面的标题
+avatarTitle: 泱
+# 头像里面的描述
+avatarDesc: 生生不息
+url: "https://ArcherSyzyygy.github.io"
+
+# Comment
+comment:
+    # disqus: 
+    # uyan:   # 有言id
+
+# Social
+social:
+    # weibo: 
+    # github: DgimoYaotoo
+    # twitter: DYaotoo
+    # mail: DgimoYaotoo@163.com
+
+# 百度统计 
+# baidu:
+    # id: 2a400124e20daf446337ad9f83c49968
+
+   
+
+permalink: /:year/:month/:title/
+# Format
+highlighter: rouge
+
+textColor: #FF0000
+
+# supported colors: blue, green, purple, red, orange or slate. If you need clear, leave it empty.
+cover_color: clear
+
+# The blog button should not be removed.
+blog_button:
+    title: 主页
+
+# Navigation buttons in the front page.s
+nav:
+    - {title: 所有文章, description: archive, url: '/archive'}   
+    - {title: 标签, description: tags, url: '/tags'}      
+    - {title: 关于我, description: about, url: '/about'}      
+    
+
+# Pagination
+# gems: [jekyll-paginate, jekyll-sitemap]
+paginate: 20
+paginate_path: "page/:num/"
+
+

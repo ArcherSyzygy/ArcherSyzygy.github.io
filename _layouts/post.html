@@ -1,0 +1,114 @@
+---
+layout: default
+---
+<!-- 音乐播放器 -->
+{% if page.musicId %}
+    <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id={{ page.musicId }}&auto=1&height=66"></iframe>
+  </p>
+  
+  <p align = 'center'>
+    <font size="4px" face = "隶书">
+      <style>
+        .vertical_line {
+        width: 600px;
+        height: 60px;
+        background-color: #ffffff;
+        border-left: 5px solid #ddd;
+        text-align: left;
+        opacity: 0.4;
+
+        /* text- */
+      }
+      </style>
+        <!-- <div style="text-align: center">
+          <i>
+              <span style="background-color:#F5F5DC;">都说音乐</span>
+          </i>
+        </div> -->
+        <div class="vertical_line">
+          <strong>
+            <font size = 4 face="楷体">
+              <p class="thick">
+                “听说音乐能让人愉悦”<br/>“你也来试试吧......”
+              </p>
+            </font>
+          </strong>
+
+      </p>
+    </font>
+  </div>
+{% endif %}
+<!-- 音乐播放器 -->
+
+<article class="post-container post-container--single" itemscope itemtype="http://schema.org/BlogPosting">
+  <header class="post-header">
+
+
+<!-- 标题 -->
+    <font face = "微软雅黑">
+      <div style="text-align: left;">
+        <h1 class="post-title">
+          <strong>
+            {{ page.title }}
+          </strong>
+        </h1>
+      </div>
+    </font>
+<!-- 标题 -->
+
+
+
+<!-- 描述 -->
+    {% if page.description %}
+      <html>
+      <head>
+      <style type="text/css">
+      p.normal {font-style:normal}
+      p.italic {font-style:italic}
+      p.oblique {font-style:oblique}
+      </style>
+      </head>
+        <font size="3px" face = "con">
+          <div style="text-align:left">
+              <!-- <strong>&nbsp&nbsp&nbsp&nbsp&nbsp </strong> -->
+            <small>
+              <span style="letter-spacing:0.5em">
+                <p class="italic">
+                  {{page.description}}
+                </p>
+              </span>              
+            </small>
+          </div>
+        </font>
+    {% endif %}
+<!-- 描述 -->
+
+
+
+    <div class="post-meta">
+      <img src="/images/calendar.png" width="20px"/> 
+      <time datetime="{{page.date | date: date_to_xmlschema}}" itemprop="datePublished" class="post-meta__date date">{{page.date | date: "%F"}}</time>  
+         
+      <!-- 不蒜子 -->
+      <span id="busuanzi_container_page_pv">
+        本文总阅读量<span id="busuanzi_value_page_pv"></span>次&nbsp&nbsp&nbsp&nbsp
+      </span>
+      <span id="busuanzi_container_site_pv">
+        本站总访问量<span id="busuanzi_value_site_pv"></span>次&nbsp&nbsp&nbsp&nbsp
+    </span>
+      <span id="busuanzi_container_site_uv">
+        本站访客数<span id="busuanzi_value_site_uv"></span>人次
+      </span>
+      
+    </p>
+    </div>
+  </header>
+
+  <section class="post">
+    {{ content }}
+
+  </section>
+</article>
+
+{% include new-old.html %}
+{% include comments.html %}
